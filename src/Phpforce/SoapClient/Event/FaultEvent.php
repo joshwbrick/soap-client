@@ -1,9 +1,9 @@
 <?php
 namespace Phpforce\SoapClient\Event;
 
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Component\EventDispatcher\GenericEvent;
 
-class FaultEvent extends Event
+class FaultEvent extends GenericEvent
 {
     protected $soapFault;
 

@@ -1,9 +1,9 @@
 <?php
 namespace Phpforce\SoapClient\Event;
 
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Component\EventDispatcher\GenericEvent;
 
-class RequestEvent extends Event
+class RequestEvent extends GenericEvent
 {
     protected $method;
     protected $params = array();
